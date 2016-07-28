@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# /usr/bin/qemu-system-x86_64.vga
+
+exec /usr/bin/qemu-system-x86_64 \
+ `echo "\$@" | \
+ sed 's|01:00.0|01:00.0,x-vga=on|g' | \
+ sed 's|07:00.0|07:00.0,x-vga=on|g'`
+
