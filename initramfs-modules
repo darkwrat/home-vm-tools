@@ -1,0 +1,3 @@
+# /etc/initramfs-tools/modules
+
+vfio-pci ids=10de:1284,10de:0e0f
